@@ -20,7 +20,7 @@ app.use(cors());
 app.use(express.json({extended: true}));
 
 //Creamos eel puerto de la app. HEROKU nos pide esta variable
-const port = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 //Importamos las rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
